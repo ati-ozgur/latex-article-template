@@ -23,8 +23,21 @@
 
 \usepackage{todonotes}
 
-\usepackage{amsmath,amssymb,amsfonts}%
-\usepackage{amsthm}%
+\usepackage{amsmath}%
+\usepackage{amssymb}%
+\usepackage{amsfonts}%
+
+
+\makeatletter%
+\@ifclassloaded{svjour3}%
+  {}%
+  {\usepackage{amsthm}}%
+\makeatother%
+
+
+
+
+
 
 % see for more info
 % https://tex.stackexchange.com/questions/229355/algorithm-algorithmic-algorithmicx-algorithm2e-algpseudocode-confused
