@@ -1,0 +1,51 @@
+
+\RequirePackage{fix-cm}
+%
+%\documentclass{svjour3}                     % onecolumn (standard format)
+%\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
+\documentclass[smallextended]{svjour3}       % onecolumn (second format)
+%\documentclass[twocolumn]{svjour3}          % twocolumn
+%
+\smartqed  % flush right qed marks, e.g. at end of proof
+%
+
+
+
+
+\input{usepackages-common}
+
+%
+% Insert the name of "your journal" with
+% \journalname{myjournal}
+%
+\begin{document}
+
+\input{front-matter-springer-svjour3}
+
+\maketitle
+
+
+\input{abstract-begin-end-keywords}
+
+\input{introduction}
+
+\input{related-works}
+
+\input{methods}
+
+\input{experimental-results}
+
+\input{discussion}
+
+\input{conclusion}
+
+
+%\bibliographystyle{spbasic}      % basic style, author-year citations
+%\bibliographystyle{spmpsci}      % mathematics and physical sciences
+%\bibliographystyle{spphys}       % APS-like style for physics
+\bibliographystyle{plain}
+\input{bib-files}
+
+\end{document}
+% end of file template.tex
+
