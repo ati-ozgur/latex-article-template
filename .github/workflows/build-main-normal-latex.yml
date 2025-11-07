@@ -8,9 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run a one-line script
-        run: echo Hello, from main latex build!
-
       - uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
