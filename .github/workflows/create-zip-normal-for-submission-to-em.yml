@@ -1,0 +1,14 @@
+name: Build normal latex article
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  call-build:
+    uses: ./.github/workflows/build-normal-latex.yml
+
+  create-zip:
+    runs-on: ubuntu-latest
+    needs: call-build
+    steps:
+      - name: EchoZip
+        run: echo "creating zip file after build..."
