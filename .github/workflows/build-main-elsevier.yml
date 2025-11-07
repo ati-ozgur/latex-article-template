@@ -1,0 +1,19 @@
+name: Build main (normal latex article)
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main-elsevier.tex
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v4
+        with:
+          name: main-elsevier
+          path: main-elsevier.pdf
+
