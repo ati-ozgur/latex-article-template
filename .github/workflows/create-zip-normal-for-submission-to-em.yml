@@ -1,8 +1,7 @@
-name: Create zip file for Editorial Manager submission standard normal latex
+name: Create zip file Editorial Manager submission standard latex
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
 
 
 jobs:
