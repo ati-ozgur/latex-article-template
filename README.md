@@ -22,11 +22,15 @@ Templates use different mechanisms for author and addresses.
 See below files.
 You may have to add same information to different files due to this issue.
 
+
+- authors.tex
 - authors-elsevier.tex
 - authors-IEEE.tex
 - authors-sage.tex
 - authors-springer.tex
-- authors.tex
+- front-matter.tex
+- front-matter-elsevier.tex
+- front-matter-springer-svjour3.tex
 
 
 
