@@ -5,14 +5,17 @@ on:
     inputs:
       uploadpdf:
         description: 'should upload the pdf'
-        required: true
+        required: false
         type: boolean    
+        default: true
+
   workflow_call:
     inputs:
       uploadpdf:
         description: 'should upload the pdf'
         required: false
         type: boolean
+        default: false
 
 
 jobs:
